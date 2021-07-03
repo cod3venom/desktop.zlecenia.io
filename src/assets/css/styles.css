@@ -1,0 +1,54 @@
+/*
+ * Project: Zlecenia.io_client_PC.
+ * Author: Levan Ostrowski
+ * User: cod3venom
+ * Date: 03.07.2021
+ * Time: 10:15
+ * Github: https://github.com/cod3venom
+*/
+
+.topbar{
+    position: fixed;
+    left: 0; top: 0; right: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #353535;
+}
+.topbar__container{
+    width: 99%;
+    height: 100%;
+}
+.topbar__body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.topbar__buttons{
+    position: absolute;
+    right: 0;
+}
+
+.topbar__buttons > button{
+    border:none;
+    outline: none;
+    color: #FFF;
+    background-color: transparent;
+}
+
+.web__view{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    bottom: 0;
+    right: 0;
+    width: 100vh;
+    height: 100vh;
+}
+.web__view > iframe{
+    width: 100vh;
+    height: 100vh;
+    border:none;
+    outline:none;
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+}

@@ -1,0 +1,50 @@
+/*
+ * Project: Zlecenia.io_client_PC.
+ * Author: Levan Ostrowski
+ * User: cod3venom
+ * Date: 03.07.2021
+ * Time: 10:15
+ * Github: https://github.com/cod3venom
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    background: #F0F2F5;
+}
+
+.block{
+    display: block;
+}
+.flex{
+    display:flex; align-content: flex-start; align-items: flex-start;
+}
+.flex__end{
+    display:flex; align-content: flex-end; align-items: flex-end;
+}
+.flex__centered{
+    display:                flex;
+    align-items:            center;
+    justify-content:        center;
+}
+.flex__between{
+    display:flex;  justify-content: space-between; align-content: space-between;
+}
+.flex__wrap{
+    display:flex; align-content: flex-start; align-items: flex-start; flex-wrap: wrap;
+}
+.shadow{
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+.no__select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
