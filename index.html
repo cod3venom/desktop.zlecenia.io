@@ -2,31 +2,35 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src *; frame-src * ;">
-    <link type="text/css" rel="stylesheet" href="src/assets/css/static.css">
+     <link type="text/css" rel="stylesheet" href="src/assets/css/static.css">
     <link type="text/css" rel="stylesheet" href="src/assets/css/styles.css">
+
   </head>
   <body>
-   <div class="main">
-     <div class="topbar">
-       <div class="topbar__container">
-         <div class="topbar__body flex__centered">
-            <div class="topbar__buttons">
-                <button>-</button>
-                <button>[]</button>
-                <button>X</button>
-            </div>
-         </div>
+   <div class="main__window no__select" id="main__window">
+       <div class="topbar shadow">
+           <div class="topbar__container">
+               <div class="topbar__body flex__centered">
+                   <div class="topbar__window__buttons">
+                       <button id="window__close__btn" class="no__select"></button>
+                       <button id="window__maximize__btn" class="no__select"></button>
+                       <button id="window__minimize__btn" class="no__select"></button>
+                   </div>
+                   <div class="topbar__window__draggable__position flex__centered" id="topbar__draggable__area">
+                       <span>ZLECENIA.IO</span>
+                   </div>
+               </div>
+           </div>
        </div>
 
        <div class="web__view">
          <iframe src="http://frontend.zlecenia.io:3000/"></iframe>
        </div>
-     </div>
 
    </div>
-    <!-- You can also require other files to run in this process -->
+
     <script src="./renderer.js"></script>
+    <script src="src/script.js"></script>
+
   </body>
 </html>

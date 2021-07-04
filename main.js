@@ -1,25 +1,17 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow} = require('electron')
-const path = require('path')
-const url = require('url')
+require('dotenv').config()
+const {app} = require('electron')
+const BootLoader = require('./src/kernel/bootLoader')
 
 
 class Main{
 
-  async  createWindow(){
-    const mainWindow = new BrowserWindow({
-      frame:false,
-      webPreferences: {
-        preload: path.join(__dirname, 'preload.js')
-      }
-    })
-    mainWindow.setMenu(null)
-    mainWindow.maximize();
-    await mainWindow.loadFile('index.html')
-    mainWindow.webContents.openDevTools();
+  __cmain = () =>{
+    new BootLoader().run();
   }
+
 }
 
-
-app.on("ready", new Main().createWindow);
+const main = new Main();
+app.on("ready", main.__cmain);
 
